@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f0f0f0, #e0e0e0);
+    text-align: center;
+    padding: 50px;
+    color: #333;
+}
+h1 {
+    color: #a649fd; /* Tomato */
+    text-shadow: 2px 2px #ff97a7; /* Light Pink */
+}
+input {
+    padding: 10px;
+    width: 70px;
+    font-size: 18px;
+    margin-right: 10px;
+    border: 2px solid #FF6347; /* Tomato */
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #fa9e14; /* Tomato */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #FF4500; /* Orange Red */
+}
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+th, td {
+    border: 1px solid #FF6347; /* Tomato */
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #e41af7; /* Tomato */
+    color: white;
+    text-shadow: 1px 1px #FFB6C1; /* Light Pink */
+}
+tr:nth-child(even) {
+    background-color: #FFEBEE; /* Light Pink */
+}
+tr:nth-child(odd) {
+    background-color: #FFEFD5; /* Lemon Chiffon */
+}
