@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+.road {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 80vh;
+    background-image: url('pista.png'); /* Substitua pelo caminho da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.player-car {
+    width: 50px;
+    height: 100px;
+    background-image: url('player.png'); /* Substitua pelo caminho da imagem do carro do player */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 25px);
+    border-radius: 5px;
+}
+
+.obstacle {
+    width: 40px;
+    height: 80px;
+    background-image: url('obstaculo.png'); /* Substitua pelo caminho da imagem do obstáculo */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -100px;
+    border-radius: 5px;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: white;
+}
