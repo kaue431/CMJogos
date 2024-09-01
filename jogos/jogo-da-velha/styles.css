@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1524135888301-1f08e22a34e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-4.0.3&q=80&w=1080'); /* Novo wallpaper */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+h1 {
+    color: #FFCC00; /* Cor do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 4vw; /* Tamanho do título responsivo */
+}
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Células responsivas */
+    gap: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 400px; /* Largura máxima para o tabuleiro */
+}
+.cell {
+    width: 100%; /* Células se ajustam à largura do contêiner */
+    height: 0; /* Altura padrão */
+    padding-top: 100%; /* Mantém a proporção quadrada */
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    font-size: 10vw; /* Tamanho da fonte responsivo */
+    color: black; /* Cor dos símbolos */
+    cursor: pointer;
+    border: 2px solid #FFCC00; /* Borda das células */
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.cell:hover {
+    background-color: rgba(255, 204, 0, 0.7); /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom */
+}
+button {
+    padding: 10px 20px;
+    font-size: 2vw; /* Tamanho do botão responsivo */
+    background-color: #FF5733; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #C70039; /* Cor ao passar o mouse no botão */
+}
+#status {
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    font-size: 4vw; /* Tamanho do texto do status responsivo */
+    color: black; /* Cor do texto do status */
+}
